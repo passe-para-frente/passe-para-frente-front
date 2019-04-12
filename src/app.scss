@@ -1,0 +1,14 @@
+@import "./components/header/style.scss";
+@import "./components/section-home/style.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Asap, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}

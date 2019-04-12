@@ -1,0 +1,27 @@
+.pf{
+    &-section{
+        &-home{
+            width: 100%;
+            height: 60vh;
+            background-image: url('images/banner_principal.jpg');
+            color: #fff;
+        }
+        &-title{
+            padding: 10% 40px 0;
+            text-transform: uppercase;
+            font-size: 24pt;
+        }
+        &-description{
+            width: 48%;
+            margin: 70px 40px 0;
+            font-size: 18.66px;
+        }
+        &-more-informations{
+            color:#f90;
+            font-size: 20px;
+            margin: 30px 40px;
+            display: block;
+            text-transform: lowercase;
+        }
+    }
+}
