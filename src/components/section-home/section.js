@@ -5,10 +5,20 @@ const SectionHome = () => {
         <section className="pf-section-home">
             <h1 className="pf-section-title">Passe para Frente</h1>
             <p className="pf-section-description">
-                PASSE PARA FRENTE aquele material esportivo, livro ou vestuário e ajude milhares de escolas e crianças. E o 
+                PASSE PARA FRENTE aquele material esportivo, livro ou vestuário e ajude milhares de escolas e crianças. E o
                 melhor: não precisa sair de casa para doar. Nós retiramos o material em seu endereço e o entregamos à instituição escolhida por você.
             </p>
             <span className="pf-section-more-informations"><a href="#">Saiba mais</a></span>
+            <div className="pf-section-about-donate-btns">
+                <a className="small-btn btn" href="#">Quero Doar</a>
+                <a className="small-btn btn" href="#">Receber Doação</a>
+            </div>
+            <div className="pf-section-about-link">
+                <a href="/sobre" class="text">
+                    <span>saiba mais</span>
+                    <span><i className="fas fa-angle-down"></i></span>
+                </a>
+            </div>
         </section>
     )
 }

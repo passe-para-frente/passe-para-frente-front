@@ -1,0 +1,17 @@
+.pf {
+  &-about {
+    &-home {
+      background: #ff9900;
+      color: white;
+      &__description {
+        margin: 0px 40px;
+        text-align: justify;
+        -moz-text-align-last: center;
+        text-align-last: center;
+      }
+      &-title{
+          padding: 20px 0;
+      }
+    }
+  }
+}
