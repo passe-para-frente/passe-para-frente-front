@@ -13,12 +13,6 @@ const SectionHome = () => {
                 <a className="small-btn btn" href="#">Quero Doar</a>
                 <a className="small-btn btn" href="#">Receber Doação</a>
             </div>
-            <div className="pf-section-about-link">
-                <a href="/sobre" class="text">
-                    <span>saiba mais</span>
-                    <span><i className="fas fa-angle-down"></i></span>
-                </a>
-            </div>
         </section>
     )
 }
