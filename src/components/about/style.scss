@@ -3,15 +3,56 @@
     &-home {
       background: #ff9900;
       color: white;
+
       &__description {
         margin: 0px 40px;
         text-align: justify;
         -moz-text-align-last: center;
         text-align-last: center;
       }
-      &-title{
-          padding: 20px 0;
+      &-title {
+        padding: 20px 0;
       }
     }
   }
+  &-show-donate {
+    width: 10%;
+    margin: 20px 45% 25px;
+    padding: 10px;
+    font-size: 14px;
+    background: white;
+    color: #ff9900;
+    border: none;
+    border-radius: 25px;
+  }
+  &-donate {
+    &-boxes {
+      display: none;
+      justify-content: space-between;
+      text-align: center;
+      margin: 0px 20px;
+      &__steps {
+        width: 33%;
+        height: 120px;
+        margin: 0 5px;
+        border-right: 1px solid #e6e5e5;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        &:last-child {
+          border: none;
+        }
+        > span {
+          margin: 0 10px;
+          font-size: 12pt;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+.pf-show-donate:focus + .pf-donate-boxes {
+  display: flex;
 }
