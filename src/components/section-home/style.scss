@@ -19,7 +19,7 @@
     &-more-informations {
       color: #f90;
       font-size: 20px;
-      margin: 30px 40px;
+      margin: 38px 40px;
       display: block;
       text-transform: lowercase;
     }
@@ -37,11 +37,23 @@
         &:nth-child(1) {
             background-color: #ff9900;
             border: 1px solid white;
+            transition: 0.7s;
+            &:hover{
+              border-color: #ff9900;
+              background: white;
+              color: #ff9900;
+            }
         }
         &:nth-child(2) {
             border: 2px solid #ff9900;
             background-color: white;
             color: #ff9900;
+            transition: 0.7s;
+            &:hover{
+              border-color: white;
+              background: #ff9900;
+              color: white;
+            }
         }
       }
     }
