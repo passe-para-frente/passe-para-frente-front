@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Asap');
 @import "./components/header/style.scss";
 @import "./components/section-home/style.scss";
 @import "./components/about/style.scss";
@@ -6,7 +7,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Asap, sans-serif;
+  font-family: 'Asap', sans-serif;
 }
 
 a{
