@@ -8,9 +8,9 @@ const Header = () => {
                     Passe para Frente
                 </a>
                 <ul className="pf-profile">
-                    <li>Sobre</li>
-                    <li>Contato</li>
-                    <li>Perfil</li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#">Perfil</a></li>
                 </ul>
             </nav>
         </header>

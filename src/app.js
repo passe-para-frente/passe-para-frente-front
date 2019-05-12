@@ -3,6 +3,9 @@ import Header from './components/header/header';
 import './app.scss';
 import SectionHome from './components/section-home/section';
 import About from './components/about/about';
+import Footer from './components/footer/footer';
+import DonationSection from './components/donations/donation';
+import HowToDonate from './components/donate/donate';
 
 class App extends React.Component{
     render(){
@@ -11,6 +14,10 @@ class App extends React.Component{
                 <Header/>
                 <SectionHome/>
                 <About />
+                <DonationSection>
+                    <HowToDonate />
+                </DonationSection>
+                <Footer />
             </Fragment>
         )
     }
