@@ -21,13 +21,13 @@ const HowToDonate = () => {
                 <p>Todo tipo de material esportivo, livro ou equipamentos de informática em condições de uso.</p>
                 <div className="detail-icons">
                     <div className="icon">
-                        <img src={Bola} alt="" />
+                        <img src={Bola} alt="Imagem de uma bola" />
                     </div>
                     <div className="icon">
-                        <img src={Livro} alt="" />
+                        <img src={Livro} alt="Imagem com uma pilha de livros" />
                     </div>
                     <div className="icon">
-                        <img src={Computer} alt="" style={{width: "60px"}} />
+                        <img src={Computer} alt="Imagem de um computador" style={{width: "60px"}} />
                     </div>
                 </div>
                 <strong className="list-materials">Clique aqui para a lista completa de possibilidades para doação.</strong>
