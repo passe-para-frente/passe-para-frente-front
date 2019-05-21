@@ -6,6 +6,7 @@ import About from './components/about/about';
 import Footer from './components/footer/footer';
 import DonationSection from './components/donations/donation';
 import HowToDonate from './components/donate/donate';
+import ContactForm from './components/contact/contact';
 
 class App extends React.Component{
     render(){
@@ -17,6 +18,7 @@ class App extends React.Component{
                 <DonationSection>
                     <HowToDonate />
                 </DonationSection>
+                <ContactForm />
                 <Footer />
             </Fragment>
         )
