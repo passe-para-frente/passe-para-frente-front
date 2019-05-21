@@ -28,10 +28,13 @@
   }
   &-donate {
     &-boxes {
-      display: none;
+      display: flex;
+      max-height: 0px;
       justify-content: space-between;
       text-align: center;
       margin: 0px 20px;
+      opacity: 0;
+      transition: max-height 1s ease-in-out;
       &__steps {
         width: 33%;
         height: 120px;
@@ -54,7 +57,9 @@
 }
 
 .pf-show-donate:focus + .pf-donate-boxes {
-  display: flex;
+  opacity: 1;
+  max-height: 150px;
+  transition: max-height 1s ease-in-out;
 }
 
 [class*="icono"] {
