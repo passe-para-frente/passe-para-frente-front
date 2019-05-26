@@ -7,12 +7,19 @@ import Footer from './components/footer/footer';
 import DonationSection from './components/donations/donation';
 import HowToDonate from './components/donate/donate';
 import ContactForm from './components/contact/contact';
+import List from './components/list/list';
 
 class App extends React.Component{
+    constructor(props){
+        super(props);
+    }
+    openMenu(){
+        console.log('abriu')
+    }
     render(){
         return(
             <Fragment>
-                <Header/>
+                <Header openMenu={this.openMenu}/>
                 <SectionHome/>
                 <About />
                 <DonationSection>
