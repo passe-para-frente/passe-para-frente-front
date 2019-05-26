@@ -60,10 +60,15 @@
     background-color: #fff;
 }
 
-.email-input{
+.contact{
     width: 30%;
     margin: 10px 35%;
     padding: 10px;
-    border: none;
-    border-radius: 50px;
+    border: none; 
+    &__textarea{
+        border-radius: 10px;
+    }
+    &__input{
+        border-radius: 50px;
+    }
 }

@@ -6,12 +6,10 @@ class ContactForm extends Component {
         this.state = {
             email: '',
             nome: '',
-            pwd: ''
+            texto: '',
         }
         this.handleForm = this.handleForm.bind(this);
         this.submitForm = this.submitForm.bind(this);
-
-
     }
     handleForm(e) {
         const {name, value} = e.target;
@@ -25,7 +23,7 @@ class ContactForm extends Component {
         const obj = {
             "email": this.state.email,
             "nome": this.state.nome,
-            "password": this.state.pwd
+            "mensagem": this.state.texto
         }
         console.log(obj)
         const headers = new Headers();
@@ -38,9 +36,9 @@ class ContactForm extends Component {
             mode: "cors",
             body: JSON.stringify(obj)
         }
-
         fetch("https://enw49r5si5y5l.x.pipedream.net/", options);
     }
+
     render() {
         return (
             <section id="contact">
@@ -50,9 +48,9 @@ class ContactForm extends Component {
                 </div>
                 <div className="contact-form">
                     <form onSubmit={this.submitForm} className="form">
-                        <input type="text" value={this.state.email} onChange={this.handleForm}  name="email" className="email-input" placeholder="exemplo@exemplo.com.br" />
-                        <input type="text" name="nome" value={this.state.nome} onChange={this.handleForm} className="email-input" placeholder="Nome" />
-                        <input type="password" name="pwd" value={this.state.pwd} onChange={this.handleForm} className="email-input" placeholder="Senha" />
+                        <input type="text" value={this.state.email} onChange={this.handleForm}  name="email" className="contact contact__input" placeholder="exemplo@exemplo.com.br" />
+                        <input type="text" name="nome" value={this.state.nome} onChange={this.handleForm} className="contact contact__input" placeholder="Nome" />
+                        <textarea placeholder="Deixe sua mensagem" className="contact contact__textarea" name="texto" value={this.state.texto} onChange={this.handleForm} ></textarea>
                         <div className="contact-send">
                             <button className="send-button">Enviar Mensagem</button>
                         </div>
