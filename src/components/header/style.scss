@@ -1,34 +1,55 @@
-.pf{
-    &-header{
-        height: 15vh;
-        padding: 10px;
-        background: #4ba333;
-        color: white;
-        font-size: 32px;
-        top: 0;
-        display: flex;
+.pf {
+  &__menu-mobile {
+    display: inline-block;
+    cursor: pointer;
+    &-bar {
+      width: 30px;
+      height: 5px;
+      margin: 5px 0;
+      background: #fff;
     }
-    &-menu{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 100%;
-        > a {
-            text-decoration: none;
-            color: inherit;
-            margin: 10px 0 0 60px;
-            text-transform: uppercase;
-            font-weight: 600;
-        }
+    @media screen and (min-width: 1024px) {
+      display: none;
     }
-    &-profile{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        list-style: none;
-        font-size: 16px;
-        > li{
-            margin: 10px 20px 0;
-        }
+  }
+  &-header {
+    height: 15vh;
+    padding: 10px;
+    background: #4ba333;
+    color: white;
+    font-size: 18px;
+    top: 0;
+    display: flex;
+    @media screen and (min-width: 1024px) {
+      font-size: 32px;
     }
+  }
+  &-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    > a {
+      width: 50%;
+      margin: 10px 0 0;
+      text-decoration: none;
+      color: inherit;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+  }
+
+  &-profile {
+    display: none;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    font-size: 14px;
+    @media screen and (min-width: 1024px) {
+      display: flex;
+    }
+    > li {
+      margin: 10px 20px 0;
+    }
+  }
 }
