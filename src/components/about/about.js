@@ -18,7 +18,7 @@ const About = () => {
             sociedade, direito e responsabilidade de todos.</p>
             </div>
             <div className="pf-about-home__description">
-                <h2 className="pf-about-home-title">Como funciona</h2>
+                <h2 className="pf-about-home-title">Como funciona?</h2>
                 <p>Pessoas físicas e jurídicas podem doar. Para isso, o fluxo do site permite que façam o cadastro com
                     login, preencham as informações sobre o material e escolham a instituição que querem doar.
                 </p>
