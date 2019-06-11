@@ -1,59 +1,75 @@
 .detail-donations {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    padding: 0
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding: 0;
 }
 
-.detail-what-donate, .detail-who-donate  {
-    width: 100%;
-    padding: 20px 0;
+.detail-what-donate,
+.detail-who-donate {
+  width: 100%;
+  padding: 15px 0;
+}
+
+.text {
+  > h2 {
+    margin: 10px 0;
+  }
+  > p {
+    display: none;
+  }
+  > strong {
+    text-align: center;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 .detail-donations strong {
-    display: inline-block;
-    margin: 30px 0;
-    cursor: pointer;
+  display: inline-block;
+  margin: 30px 0;
+  cursor: pointer;
 }
 
 .detail-what-donate {
-    background-color: #ff9900;
-    text-align: center;
-    color: #ffffff;
+  background-color: #ff9900;
+  text-align: center;
+  color: #ffffff;
 }
 
 .detail-icons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .detail-icons .icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 20px 6px;
-    background-color: #ffffff;
-    width: 85px;
-    height: 85px;
-    border-radius: 5px;
-    box-shadow: 3px 5px #E6E5E5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 6px;
+  background-color: #ffffff;
+  width: 85px;
+  height: 85px;
+  border-radius: 5px;
+  box-shadow: 3px 5px #e6e5e5;
 }
 
 .detail-separator {
-    display: none;
+  display: none;
 }
 
 /* details who donate */
 .detail-who-donate {
-    text-align: center;
+  text-align: center;
 }
 
 .detail-who-donate p {
-    text-align: justify;
+  text-align: justify;
 }
 
 .detail-who-donate strong {
-    color: #ff9900;
+  color: #ff9900;
 }

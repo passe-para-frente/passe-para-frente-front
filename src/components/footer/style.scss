@@ -1,16 +1,21 @@
 
 footer {
-    align-items: center;
-    background-color: #ff9900;
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 102px;
     padding: 15px;
+    align-items: center;
+    background-color: #48A333;
+    justify-content: space-evenly;
+
+    >h3 {
+        text-align: center;
+    }
 }
 
 .icons{
   display: flex;
   align-items: center;
+  > a {
+      width: 150px;
+  }
 }
 
 footer .icons img {
@@ -50,7 +55,7 @@ footer .icons img {
   width: 50%!important;
 }
 
-@media (min-width:768px) {
+@media (min-width:1080px) {
     footer {
         background-color: #48A333;
         display: flex;
